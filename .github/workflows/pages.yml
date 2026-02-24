@@ -2,8 +2,7 @@ name: Build and deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -11,48 +10,45 @@ permissions:
   id-token: write
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-    outputs:
-      page_url: ${{ steps.upload.outputs.page_url }}
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Use Node.js
+      - name: Setup Node (Quartz requires Node >= 22)
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: "22"
+          cache: "npm"
 
-      - name: Install dependencies
+      # Ensure npm is new enough (Quartz requires npm >= 10.9.2)
+      - name: Upgrade npm
+        run: npm i -g npm@^10.9.2
+
+      - name: Install deps
         run: npm ci
 
-      - name: Build site
+      - name: Build Quartz
         run: npx quartz build
 
-      - name: Disable Jekyll (prevent Pages from trying to process repo with Jekyll)
+      - name: Disable Jekyll
         run: |
-          mkdir -p public
           touch public/.nojekyll
 
-      - name: Upload artifact for GitHub Pages
-        id: upload
-        # Use the v4 tag of the upload-pages-artifact action
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          # Give the artifact a unique name per workflow run
-          name: pages-artifact-${{ github.run_id }}
           path: ./public
+          name: github-pages
 
   deploy:
     runs-on: ubuntu-latest
-    needs: build-and-deploy
-    permissions:
-      pages: write
-      id-token: write
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
-        # Use v4 of the deploy-pages action
+        id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          artifact_id: ${{ needs.build-and-deploy.outputs.page_url || steps.upload.outputs.artifact_id }}
