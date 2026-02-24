@@ -1,4 +1,4 @@
-# 23.2.26 Real Analysis Class Notes (Cleaned + Clarified)
+# 23.2.26 Real Analysis Class Notes
 
 1. **Cesàro Mean**
 	- **Statement:** If $x_n \to x$, then
