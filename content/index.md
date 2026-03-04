@@ -6,5 +6,10 @@
 
 ## Midterm II
 
-- [[Math 450A - 2.16 and 2.18 class notes]]
-- [[Math 450A - 2.23 class notes]]
+- Class Notes
+	- [[Math 450A - 2.16 and 2.18 class notes]]
+	- [[Math 450A - 2.23 class notes]]
+	- [[4.3.26 Real Analysis Class Notes]]
+- Pri Fixe
+	- [[most pertinent pri fixe problems for midterm 2]]
+	- [[midterm 2 pri fixe problems and solutions]]

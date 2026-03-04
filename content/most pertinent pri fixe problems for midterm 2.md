@@ -1,0 +1,25 @@
+- **Most Likely (Directly Covered and Repeated in Class)**
+    - 2.4.1 (multiple days; monotonicity crux; algebra step book skips)
+    - 2.4.5 (Newton method; AM–GM vs calculus discussion)
+    - 2.6.4 ($|a_n - b_n|$ Cauchy; reverse triangle inequality emphasis)
+    - 2.6.2 (Cauchy examples; boundedness implications)
+    - 2.3.11 (Cesàro mean; split into $\epsilon /2$)
+    - 3.2.2 (limit points, isolated points, closure)
+    - 3.2.1 (union/intersection of open sets; finite vs infinite intersection)
+    - 3.2.3 (closure, e.g. $\mathbb{Q}$ neither open nor closed)
+    - 3.3.12 (bounded infinite $\Rightarrow$ limit point; open cover reasoning discussed)
+    - 2.3.10 (reverse triangle inequality; limit manipulation style problems)
+
+- **Medium (Covered Indirectly or Structurally Connected)**
+    - 2.4.3 (nested radicals; monotone + bounded; similar to 2.4.1)
+    - 2.3.1 (square root continuity via $\epsilon$-argument)
+    - 2.3.2 (pure definition $\epsilon$-proofs without limit theorems)
+    - 2.5.1 (subsequence logic; BW reasoning)
+    - 2.5.2 (monotone + subsequence logic)
+    - 2.3.7 (convergent/divergent constructions)
+    - 2.4.7 (lim sup / lim inf; monotone convergence applied to sup/inf tails)
+
+- **Lower Probability (Mentioned but Not Fully Developed in Class)**
+    - 3.3.1 (sup/inf in compact sets; not fully proven in lecture)
+    - 3.3.2 (compact classification; more classification than technique-heavy)
+    - 3.2.6 (true/false topology; density arguments)
