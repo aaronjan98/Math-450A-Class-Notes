@@ -483,9 +483,7 @@
                 - Each $O_n$ is open.
                 - $\bigcap_{n=1}^\infty O_n=[0,1]$ (closed, nonempty, proper subset of $\mathbb{R}$).
 
-- **3.2.2.** (pg. 93) Let $$
-    A = \left\{ (-1)^n + \frac{2}{n}: n = 1, 2, 3,\dots \right\} \quad\text{and}\quad B = \left\{ x \in \mathbb{Q} : 0 < x < 1 \right\}. 
-    $$  Answer the following questions for each set:
+- **3.2.2.** (pg. 93) Let $$ A = \left\{ (-1)^n + \frac{2}{n}: n = 1, 2, 3,\dots \right\} \quad\text{and}\quad B = \left\{ x \in \mathbb{Q} : 0 < x < 1 \right\}.  $$  Answer the following questions for each set:
     - (a) What are the limit points?
         - For $A$:
             - Even $n$: $(-1)^{2n}+\dfrac{2}{2n}=1+\dfrac{1}{n}\to 1$.
