@@ -13,3 +13,8 @@
 - Pri Fixe
 	- [[most pertinent pri fixe problems for midterm 2]]
 	- [[midterm 2 pri fixe problems and solutions]]
+
+## Midterm III
+
+- Class Notes
+    - [[6.4.26 Real Analysis Class Notes]]
