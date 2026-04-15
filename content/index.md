@@ -20,3 +20,7 @@
     - [[6.4.26 Real Analysis Class Notes]]
 - Pri Fixe
     - [[Midterm 3 Pri-Fixe List Problems and Solutions]]
+
+## Finals
+
+- [[13.4.26 Real Analysis Class Notes]]
